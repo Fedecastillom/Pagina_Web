@@ -12,11 +12,12 @@ body{
     position: relative;
     background: #EAEEEF;
 }
+/* HEADER */
 header{
     background: white;
     display: flex;
     align-items: center;
-    height: 5%;
+    height: 8%;
 }
 header .logo-img{
     height: 1.5em;
@@ -57,6 +58,7 @@ header .login{
     display: flex;
     gap: 7.5px;
 }
+/* FIN -- HEADER */
 /* NAVBAR */
 .navbar {
     display: flex;
@@ -65,6 +67,8 @@ header .login{
     background-color: white;
     justify-content: center;
     gap: 7.5px;
+    top: 0;
+    position: sticky;
 }
 .navbar button{
     background-color: transparent;
@@ -82,21 +86,21 @@ header .login{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: black;
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;
 }
 .navbar button:hover::after {
-    transform: scaleX(1);
+    transform: scaleX(0.8);
 }
 .navbar button:focus::after {
     transform: scaleX(1);
 }
 /* FIN -- NAVBAR */
-/* PIE DE PAGINA */
+/* FOOTER */
 .footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: #64a4bd;
@@ -148,8 +152,8 @@ header .login{
     margin-bottom: 0;
     margin-top: 3px;
 }
-/* FIN -- PIE DE PAGINA */
-
+/* FIN -- FOOTER */
+/* SLIDER FRAME */
 .slider-frame {
     width: 300px;
     height: auto;
@@ -160,7 +164,7 @@ header .login{
     display: flex;
 	padding: 0;
 	width: 400%;	
-	animation: slide 20s infinite ease-in-out;
+	animation: slide 20s infinite ease;
 }
 .slider-frame li{
     list-style: none;
@@ -182,4 +186,4 @@ header .login{
     75%{margin-left: -300%;}
     95%{margin-left: -300%;}
 }
-
+/* FIN -- SLIDER FRAME */
