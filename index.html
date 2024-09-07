@@ -12,24 +12,104 @@
   </head>
   <body>
     <header>
-      <div class="title"><h1><span>Moscu</span> <span>Cars</span></h1></div>
+      <div class="title">
+        <h1><span>MOSCU</span> <span>CARS</span></h1>
+      </div>
       <nav class="navbar">
-        <button>Sport Cars</button>
-        <button>Experiencias</button>
-        <button>Contacto</button>
-        <button>About us</button>
+        <a href="#home">Home</a>
+        <a href="#service">Service</a>
+        <a href="#new-cars">New Cars</a>
+        <a href="#">Featured Cars</a>
+        <a href="#">Contact</a>
       </nav>
     </header>
     <main>
-      <div class="images">
-        <img src="https://images.unsplash.com/photo-1575833885699-bae73b593ca2?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="car1">
+      <div id="home" class="images">
+        <img
+          src="https://images.unsplash.com/photo-1575833885699-bae73b593ca2?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="car1"
+        />
       </div>
+
       <section class="mid">
         <div class="text-mid">
-          <h2>¿Qué te gustaría manejar?</h2>
+          <h2>¿Qué te gustaría <span>manejar</span>?</h2>
           <p>Explora nuestros mejores autos</p>
         </div>
-      </div>
+      </section>
+
+      <section id="service" class="service">
+        <div>
+          <i class="fas fa-car"></i>
+          <h2>Largest dealership of cars</h2>
+          <p>
+            Descubre por qué somos la opción preferida de miles de clientes
+            satisfechos.
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-tools"></i>
+          <h2>Warranty</h2>
+          <p>
+            Con nuestra garantía, puedes conducir con confianza y sin
+            preocupaciones.
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-file-alt"></i>
+          <h2>Insurance support</h2>
+          <p>
+            Nuestra colaboración con las principales aseguradoras nos permite
+            ofrecerte las mejores opciones y precios.
+          </p>
+        </div>
+      </section>
+
+      <section id="new-cars" class="new-cars">
+        <div class="text">
+          <p>Nuestros ultimos autos</p>
+          <h2>New <span>Cars</span></h2>
+        </div>
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img
+                id="slide-1"
+                class="slider-item"
+                src="https://images.unsplash.com/photo-1606106931154-e644430401aa?q=80&w=2153&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+              <img
+                id="slide-2"
+                class="slider-item"
+                src="https://images.unsplash.com/photo-1532581140115-3e355d1ed1de?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+              <img
+                id="slide-3"
+                class="slider-item"
+                src="https://images.unsplash.com/photo-1621594820646-3b981b640b7e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+              <img
+                id="slide-4"
+                class="slider-item"
+                src="https://images.unsplash.com/photo-1616789916437-bbf724d10dae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+              <a href="#slide-4"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-cars">
+        
       </section>
     </main>
   </body>
