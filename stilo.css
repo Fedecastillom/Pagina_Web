@@ -10,63 +10,165 @@
 }
 
 header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+
+  & .logo {
+    flex-grow: 1;
+    font-size: 1.2rem;
+  }
+
+  & .navbar {
     display: flex;
-    align-items: center;
-    padding: 20px;
+    flex-grow: 1;
+    gap: 7.5px;
+
+    & a {
+      background-color: transparent;
+      font-size: 1.1em;
+      border: none;
+      padding: 10px 20px;
+      color: black;
+      display: flex;
+      position: relative;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    & a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: black;
+      transform: scaleX(0);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    & a:hover::after {
+      transform: scaleX(0.8);
+    }
+  }
+
+  & .login {
+    display: flex;
+    justify-content: start;
+
+    & button {
+      border-radius: 5px;
+      padding: 10px;
+      color: white;
+      background-color: black;
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  & .service {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 
-    & .logo {
-        flex-grow: 1;
-        font-size: 1.2rem;
+    & .text {
+      text-align: center;
     }
 
-    & .navbar {
+    & .cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10vh;
+      width: 100%;
+      gap: 10px;
+
+      & .row1 {
         display: flex;
-        flex-grow: 1;
-        gap: 7.5px;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
 
-        & a {
-            background-color: transparent;
-            font-size: 1.1em;
-            border: none;
-            padding: 10px 20px;
-            color: black;
-            display: flex;
-            position: relative;
-            gap: 5px;
-            cursor: pointer;
-        }
+        & .items {
+          border-radius: 8px;
+          width: 45vh;
+          height: 30vh;
+          padding: 10px;
+          background: #0e0e0e;
+          transition: all 0.3s ease;
 
-        & a::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background-color: black;
-            transform: scaleX(0);
-            transition: transform 0.2s ease-in-out;
-        }
-
-        & a:hover::after {
-            transform: scaleX(0.8);
-        }
-    }
-
-    & .login {
-        display: flex;
-        justify-content: start;
-        
-        & button {
-            border-radius: 5px;
-            padding: 10px;
+          & h2 {
             color: white;
-            background-color: black;
+          }
+
+          & p {
+            color: white;
+          }
+
+          & .icon {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+
+            & i {
+              font-size: 2rem;
+              color: white;
+            }
+          }
         }
+
+        & div:hover {
+          background: #215003;
+        }
+
+        & div:nth-child(2) {
+          transform: translateY(15px);
+        }
+      }
+
+      & .row2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+
+        & .items {
+          border-radius: 8px;
+          width: 45vh;
+          height: 30vh;
+          padding: 10px;
+          background: #cbcbcb;
+          transition: all 0.3s ease;
+
+          & .icon {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+
+            & i {
+              font-size: 2rem;
+              color: black;
+            }
+          }
+        }
+
+        & div:nth-child(2) {
+          transform: translateY(15px);
+        }
+      }
     }
+  }
 }
-/* FOOTER */
+
 footer {
   background-color: #ffffff;
   padding: 70px 0;
@@ -94,7 +196,7 @@ footer {
           position: relative;
           color: #000000;
         }
-        
+
         h4::before {
           content: "";
           position: absolute;
@@ -145,11 +247,4 @@ footer {
       }
     }
   }
-}
-
-/* header */
-.title hero{
-  background-color: #0dda29 ;
-  width: 100%;
-  height: 500px;
 }
