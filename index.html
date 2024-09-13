@@ -5,160 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Moscu Cars</title>
+    <title>PyCore</title>
   </head>
   <body>
     <header>
-      <div class="title">
-        <h1><span>MOSCU</span> <span>CARS</span></h1>
+      <div class="logo">
+        <h1>PyCore.com</h1>
       </div>
-      <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#service">Service</a>
-        <a href="#new-cars">New Cars</a>
-        <a href="#featured-cars">Featured Cars</a>
-        <a href="#footer">Contact</a>
-      </nav>
+
+      <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Plans</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="login">
+        <button>Iniciar Sesion</button>
+      </div>
     </header>
-    
+
     <main>
-      <div id="home" class="images">
-        <img
-          src="https://images.unsplash.com/photo-1575833885699-bae73b593ca2?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="car1"
-        />
-      </div>
+      <section id="heroSection" class="heroSection">
+        <hero>
+          <div>
+            <h2>Welcome to PyCore</h2>
+            <p>Your partner in custom API development</p>
+          </div>
+        </hero>
 
-      <section class="mid">
-        <div class="text-mid">
-          <h2>¿Qué te gustaría <span>manejar</span>?</h2>
-          <p>Explora nuestros mejores autos</p>
-        </div>
+        <aside>
+          <img src="assets/python-84.svg" alt="Illustration of Python code" />
+        </aside>
       </section>
 
-      <section id="service" class="service">
-        <div>
-          <i class="fas fa-car"></i>
-          <h2>Largest dealership of cars</h2>
-          <p>
-            Descubre por qué somos la opción preferida de miles de clientes
-            satisfechos.
-          </p>
-        </div>
-        <div>
-          <i class="fas fa-tools"></i>
-          <h2>Warranty</h2>
-          <p>
-            Con nuestra garantía, puedes conducir con confianza y sin
-            preocupaciones.
-          </p>
-        </div>
-        <div>
-          <i class="fas fa-file-alt"></i>
-          <h2>Insurance support</h2>
-          <p>
-            Nuestra colaboración con las principales aseguradoras nos permite
-            ofrecerte las mejores opciones y precios.
-          </p>
-        </div>
-      </section>
-
-      <section id="new-cars" class="new-cars">
+      <section class="service">
         <div class="text">
-          <p>Nuestros ultimos autos</p>
-          <h2>New <span>Cars</span></h2>
+          <h3>Our Services</h3>
+          <h2>
+            Tailored solutions<br />to meet your <span>digital</span> needs
+          </h2>
         </div>
-        <div class="container">
-          <div class="slider-wrapper">
-            <div class="slider">
-              <img
-                id="slide-1"
-                class="slider-item"
-                src="https://images.unsplash.com/photo-1606106931154-e644430401aa?q=80&w=2153&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-              />
-              <img
-                id="slide-2"
-                class="slider-item"
-                src="https://images.unsplash.com/photo-1532581140115-3e355d1ed1de?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-              />
-              <img
-                id="slide-3"
-                class="slider-item"
-                src="https://images.unsplash.com/photo-1621594820646-3b981b640b7e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-              />
-              <img
-                id="slide-4"
-                class="slider-item"
-                src="https://images.unsplash.com/photo-1616789916437-bbf724d10dae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-              />
+
+        <div class="cards">
+          <div class="row1">
+            <div class="items">
+              <i class="fa-solid fa-list-check"></i>
+              <h2>IT Management</h2>
+              <p>
+                Streamline your IT infrastructure with our comprehensive
+                management services
+              </p>
             </div>
-            <div class="slider-nav">
-              <a href="#slide-1"></a>
-              <a href="#slide-2"></a>
-              <a href="#slide-3"></a>
-              <a href="#slide-4"></a>
+
+            <div class="items">
+              <i class="fas fa-shield-halved"></i>
+              <h2>Cybersecurity</h2>
+              <p>
+                Protect your business with robust security solutions, ensuring
+                your data and systems are safe
+              </p>
+            </div>
+
+            <div class="items">
+              <i class="fa-solid fa-brain"></i>
+              <h2>IT Consultancy</h2>
+              <p>
+                Get expert advice and guidance to make informed decisions on
+                technology strategies
+              </p>
             </div>
           </div>
-          <div class="details">
-            <button>View Details</button>
-          </div>
-        </div>
-      </section>
-
-      <section id="featured-cars" class="featured-cars">
-        <div class="container">
-          <div class="text">
-            <p>Nuestros mejores autos</p>
-            <h2>Featured <span>Cars</span></h2>
-          </div>
-          <div class="rows">
+          <div class="row2">
             <div class="items">
-              <div class="foto"><img src="Fotos/fc1.png" alt="" /></div>
-              <div class="car-name"><p>BMW X1</p></div>
+              <i class="fa-solid fa-cloud"></i>
+              <h2>Cloud Computing</h2>
+              <p>
+                Harness the power of the cloud with scalable solutions for
+                storage, computing, and more
+              </p>
             </div>
 
             <div class="items">
-              <div class="foto"><img src="Fotos/fc2.png" alt="" /></div>
-              <div class="car-name"><p>Chevrolet Camaro</p></div>
+              <i class="fa-solid fa-code"></i>
+              <h2>API Development</h2>
+              <p>
+                Custom API development that meets your business needs and drives
+                innovation
+              </p>
             </div>
 
             <div class="items">
-              <div class="foto"><img src="Fotos/fc3.png" alt="" /></div>
-              <div class="car-name"><p>Lamborghini Huracan</p></div>
-            </div>
-
-            <div class="items">
-              <div class="foto"><img src="Fotos/fc4.png" alt="" /></div>
-              <div class="car-name"><p>Audi A3</p></div>
-            </div>
-          </div>
-
-          <div class="rows">
-            <div class="items">
-              <div class="foto"><img src="Fotos/fc5.png" alt="" /></div>
-              <div class="car-name"><p>Infiniti Q50</p></div>
-            </div>
-
-            <div class="items">
-              <div class="foto"><img src="Fotos/fc4 (1).png" alt="" /></div>
-              <div class="car-name"><p>Audi A4</p></div>
-            </div>
-
-            <div class="items">
-              <div class="foto"><img src="Fotos/fc8.png" alt="" /></div>
-              <div class="car-name"><p>BMW Z4 Roadster</p></div>
-            </div>
-
-            <div class="items">
-              <div class="foto"><img src="Fotos/fc7.png" alt="" /></div>
-              <div class="car-name"><p>BMW X5</p></div>
+              <i class="fa-solid fa-chart-simple"></i>
+              <h2>Marketing Strategy</h2>
+              <p>
+                Boost your business with tailored marketing strategies powered
+                by the latest digital tools
+              </p>
             </div>
           </div>
         </div>
@@ -171,25 +117,17 @@
           <div class="footer-col">
             <h4>Company</h4>
             <ul>
-              <li><a href="#">Sobre nosotros</a></li>
-              <li><a href="#">Experiencias</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Experience</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Get help</h4>
             <ul>
-              <li><a href="#">FAQ</li>
-              <li><a href="#">Soporte</a></li>
-              <li><a href="#">Terminos y condiciones</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Online shop</h4>
-            <ul>
-              <li><a href="#">Autos</a></li>
-              <li><a href="#">Partes y accesorios</a></li>
-              <li><a href="#">Ofertas y promociones</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -203,6 +141,6 @@
           </div>
         </div>
       </div>
-   </footer>
+    </footer>
   </body>
 </html>
