@@ -35,7 +35,7 @@
       font-weight: 600;
       line-height: 30px;
       color: #295f98;
-      text-shadow: 2px 2px black;
+      text-shadow: 1px 1px black;
     }
 
     & input {
@@ -64,21 +64,21 @@
       padding: 10px;
       color: white;
       text-shadow: 2px 2px black;
-      box-shadow: 3px 3px black;
+      box-shadow: 0px 5px 0px 0px #9dccff;
       background-color: #295f98;
-      transition: all 0.2s ease-in-out;
+      transition: all .1s ease;
     }
 
     & button:active {
-      transform: translate(3px, 3px);
-      box-shadow: 0px 0px black;
+      transform: translateY(5px);
+      box-shadow: 0px 0px 0px 0px #9dccff;
     }
   }
 
   i {
     margin-bottom: 10px;
     font-size: 1.4rem;
-    filter: drop-shadow(2px 1px black);
+    filter: drop-shadow(1px 1px black);
     color: #295f98;
   }
 }
