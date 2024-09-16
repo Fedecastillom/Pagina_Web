@@ -24,6 +24,7 @@ header {
   & .navbar {
     display: flex;
     flex-grow: 1;
+    justify-content: center;
     gap: 7.5px;
 
     & a {
@@ -58,7 +59,8 @@ header {
 
   & .login {
     display: flex;
-    justify-content: start;
+    justify-content: end;
+    flex-grow: 1;
 
     & button {
       border: none;
