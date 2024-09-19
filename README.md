@@ -26,7 +26,7 @@ Diseñamos nuestra pagina para que sea intuitiva y fácil de navegar, asegurando
 ## Características visuales
 El logo de PyCore es una combinación de una serpiente y un núcleo, representando el enfoque de la empresa.
 
-### Paleta de Colores:
+## Paleta de Colores:
 
 Color Principal: #295F98 (Azul)
 
@@ -34,11 +34,11 @@ Color Secundario: #161616 (Negro)
 
 Color de Fondo: #f9f9f9 (Blanco)
 
-### Tipografia
+## Tipografia
 
 Fuente principal: Poppins
 
-### Palabras Clave
+## Palabras Clave
 
 Python
 
@@ -48,10 +48,10 @@ Ciber seguridad
 
 Desarollo de APIs
 
-### Eslogan
+## Eslogan
 
 "Desarrollamos soluciones innovadoras para impulsar tus objetivos".
 
-### Imagen General 
+## Imagen General 
 
 Innovación, experiencia y enfoque en el usuario. La empresa sera como un socio de confianza para empresas y particulares que buscan desarrollar aplicaciones personalizadas que se adapten a sus necesidades. El sitio web y los materiales de marketing transmitirán una sensación de profesionalismo, modernidad y accesibilidad.
