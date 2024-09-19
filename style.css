@@ -207,7 +207,7 @@ main {
         }
 
         & div:nth-child(2) {
-          transform: translateY(15px);
+          transform: translateY(-15px);
           text-shadow: 2px 2px black;
         }
       }
@@ -256,7 +256,7 @@ main {
         }
 
         & div:nth-child(2) {
-          transform: translateY(15px);
+          transform: translateY(-15px);
         }
       }
     }
