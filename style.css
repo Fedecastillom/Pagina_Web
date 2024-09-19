@@ -661,6 +661,7 @@ footer {
         width: 100%;
         gap: 10px;
         cursor: pointer;
+        background: transparent;
         border: 1px solid #dbd5d5;
         transition: 0.2s ease-in-out;
 
