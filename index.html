@@ -21,13 +21,15 @@
         <h1>PyCore.com</h1>
       </div>
 
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
       <div class="navbar">
         <a href="#header">Home</a>
         <a href="#services">Services</a>
         <a href="#plans">Plans</a>
         <a href="assets/contact.html">Contact</a>
       </div>
-
       <div class="login">
         <a href="assets/signUp.html"><button>Sign Up</button></a>
       </div>
@@ -120,42 +122,40 @@
           <h2>We make it<br />Simple, <span>Faster</span> and Cheaper</h2>
         </div>
         <div class="cards">
-          <div class="row">
-            <div class="items">
-              <div class="details">
-                <h2>Basic Plan</h2>
-                <h3><span>$99</span> / Project<br /></h3>
-                <p>
-                  Designed for personal use, offering a cost-effective solution
-                  for small projects.
-                </p>
-              </div>
-              <button>Choose Plan</button>
+          <div class="items">
+            <div class="details">
+              <h2>Basic Plan</h2>
+              <h3><span>$99</span> / Project<br /></h3>
+              <p>
+                Designed for personal use, offering a cost-effective solution
+                for small projects.
+              </p>
             </div>
+            <button>Choose Plan</button>
+          </div>
 
-            <div class="items">
-              <div class="details">
-                <h2>Premium Plan</h2>
-                <h3><span>$399</span> / Project<br /></h3>
-                <p>
-                  Designed for small companies, providing a more comprehensive
-                  set of features to support your growing business needs.
-                </p>
-              </div>
-              <button>Choose Plan</button>
+          <div class="items">
+            <div class="details">
+              <h2>Premium Plan</h2>
+              <h3><span>$399</span> / Project<br /></h3>
+              <p>
+                Designed for small companies, providing a more comprehensive set
+                of features to support your growing business needs.
+              </p>
             </div>
+            <button>Choose Plan</button>
+          </div>
 
-            <div class="items">
-              <div class="details">
-                <h2>Corporate Plan</h2>
-                <h3><span>$799</span> / Project</h3>
-                <p>
-                  Designed for large companies, offering a robust set of
-                  features to support your complex API development requirements.
-                </p>
-              </div>
-              <button>Choose Plan</button>
+          <div class="items">
+            <div class="details">
+              <h2>Corporate Plan</h2>
+              <h3><span>$799</span> / Project</h3>
+              <p>
+                Designed for large companies, offering a robust set of features
+                to support your complex API development requirements.
+              </p>
             </div>
+            <button>Choose Plan</button>
           </div>
         </div>
       </section>
@@ -163,42 +163,46 @@
 
     <footer id="footer">
       <div class="footer-container">
-        <div class="row">
-          <div class="footer-col">
-            <h4>Team</h4>
-            <ul>
-              <li><a>Federico Castillo</a></li>
-              <li><a>Matias Diaz</a></li>
-              <li><a>Santiago Lopez</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Company</h4>
-            <ul>
-              <li><a>About Us</a></li>
-              <li><a>Our Experience</a></li>
-              <li><a href="assets/contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Get help</h4>
-            <ul>
-              <li><a>FAQ</a></li>
-              <li><a>Support</a></li>
-              <li><a>Terms & Conditions</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Follow us</h4>
-            <div class="social-links">
-              <a><i class="fab fa-facebook-f"></i></a>
-              <a><i class="fab fa-twitter"></i></a>
-              <a><i class="fab fa-instagram"></i></a>
-              <a><i class="fab fa-linkedin-in"></i></a>
-            </div>
+        <div class="footer-col">
+          <h4>Team</h4>
+          <ul>
+            <li><a>Federico Castillo</a></li>
+            <li><a>Matias Diaz</a></li>
+            <li><a>Santiago Lopez</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a>About Us</a></li>
+            <li><a>Our Experience</a></li>
+            <li><a href="assets/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get help</h4>
+          <ul>
+            <li><a>FAQ</a></li>
+            <li><a>Support</a></li>
+            <li><a>Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-links">
+            <a><i class="fab fa-facebook-f"></i></a>
+            <a><i class="fab fa-twitter"></i></a>
+            <a><i class="fab fa-instagram"></i></a>
+            <a><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>
     </footer>
+    <script>
+      function toggleMenu() {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
