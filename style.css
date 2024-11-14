@@ -105,21 +105,7 @@ body {
   background-color: #f9f9f9;
 }
 
-/* .gif{
-  z-index: 2;
-  position: absolute;
-  display: flex;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 20px;
-  height: 45vh;
-  width: 95%;
-  z-index: 5;
-  background-image: url(https://i.pinimg.com/originals/8a/24/3c/8a243c72f6a274e48a06d50d0eed54af.gif);
-    background-position: 4px;
-    background-size: cover;
-    background-repeat: 0; 
-} */
+
 main {
 
   display: flex;
@@ -329,12 +315,21 @@ main {
         color: black;
         background: #eaeaea;
         transition: all 0.3s ease;
+        @media (max-width: 380px) {
+          height: auto;
+          gap: 20px;
+        }
 
         & .details {
           display: flex;
           flex-direction: column;
           gap: 0.5rem;
           height: 25vh;
+          @media (max-width: 375px) {
+            height: auto;
+            
+          }
+          
 
           & h2 {
             font-size: 1.2rem;
@@ -357,6 +352,10 @@ main {
             padding-top: 10px;
             text-align: center;
             font-size: 0.9rem;
+
+            @media (max-width: 380px) {
+              display: none;
+            }
           }
         }
 
@@ -867,9 +866,8 @@ button:active {
     text-shadow: none;
     background-color: #2424247e;
   }
-  .items{
-    height: 40vh;
-  }
+
+  
   /* singup */
  .signup{
   position: absolute;
