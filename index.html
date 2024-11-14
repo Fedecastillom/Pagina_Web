@@ -7,60 +7,83 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <script defer src="/Pagina_Web/main.js/js.js"></script>
+    <script defer src="/Pagina_Web/main.js/exit.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
-      href="archivos/python-grafico.svg"
+      href="./assets/python-grafico.svg"
       type="image/x-icon"
     />
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>PyCore</title>
   </head>
   <body>
+    <div class="gris"></div>
     <header id="header">
       <div class="logo">
         <h1>PyCore.com</h1>
       </div>
-
-      <div class="menu-toggle" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
+      <div class="navcontent">
+        <button id="exit">
+          <img class="menu" alt="imagen.icono" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNklEQVR4nO3WSU4CURSF4WpfNazPASCWiIiIiFiUU2aCy1Cxw97Y97EHgdTAJQDbOEYTh0WcWdHzreDcl7zklyQiIqI/o/wuJM9flD2/L3sdyKU2ZLcFxX2DMteEUmxAKb5CnX2BWniGWniCOvMILf8ALX8PbfoOWu4Weu4G+tQ19OwV9OwlxOQFROYcInMGMXEKkT6BkT6GMX4EI3UII3UAc2wfZnIPZnIX5ugOLGcblrMFa6QOK7EJO7HRs+JrVWmoLoIPmPersucjhONhD6/Djq/CitUqgftD+vL4Hm/HaohEl/vBB5Q6vVCPj618HtANPsBtV0I+HpHo0sLATyy7zYpSbPRCOL77NX7gJyYi+l1lthDYQg5bqMUWEmwhIvqnymwhsIUctlCLLSTYQkRERNKPfABXxjwrJziUSQAAAABJRU5ErkJggg=="/> 
+        </button>
+        <div class="navbar" id="navbar">
+          <a href="#header">Home</a>
+          <a href="#services">Services</a>
+          <a href="#plans">Plans</a>
+          <a href="assets/contact.html">Contact</a>
+          <div class="login" id="login">
+            <a id="boton2" href="/Pagina_Web/assets/singUp.html">
+              <button id="singup2">Sign Up</button></a>
+          </div>
+        </div>
       </div>
-      <div class="navbar">
-        <a href="#header">Home</a>
-        <a href="#services">Services</a>
-        <a href="#plans">Plans</a>
-        <a href="archivos/contacto.html">Contact</a>
+      <div class="login" id="login">
+        <a id="boton1" href="/Pagina_Web/assets/singUp.html"
+          ><button id="singup">Sign Up</button></a>
       </div>
-      <div class="login">
-        <a href="archivos/registro.html"><button>Sign Up</button></a>
-      </div>
+      <!-- menu responsive -->
+      <button id="menu">
+        <img
+          class="menu"
+          alt="imagen.icono"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNklEQVR4nO3WSU4CURSF4WpfNazPASCWiIiIiFiUU2aCy1Cxw97Y97EHgdTAJQDbOEYTh0WcWdHzreDcl7zklyQiIqI/o/wuJM9flD2/L3sdyKU2ZLcFxX2DMteEUmxAKb5CnX2BWniGWniCOvMILf8ALX8PbfoOWu4Weu4G+tQ19OwV9OwlxOQFROYcInMGMXEKkT6BkT6GMX4EI3UII3UAc2wfZnIPZnIX5ugOLGcblrMFa6QOK7EJO7HRs+JrVWmoLoIPmPersucjhONhD6/Djq/CitUqgftD+vL4Hm/HaohEl/vBB5Q6vVCPj618HtANPsBtV0I+HpHo0sLATyy7zYpSbPRCOL77NX7gJyYi+l1lthDYQg5bqMUWEmwhIvqnymwhsIUctlCLLSTYQkRERNKPfABXxjwrJziUSQAAAABJRU5ErkJggg=="
+        />
+      </button>
     </header>
 
+
     <main>
+      <div class="gif"></div>
+      <div class="heroWrapper">
       <section id="heroSection" class="heroSection">
+
         <hero>
           <div>
             <h2>Welcome to PyCore</h2>
             <p>We develop innovative solutions to drive your goals</p>
           </div>
         </hero>
-
+        
+        
         <aside>
-          <img src="archivos/python-grafico.svg" alt="Illustration of Python" />
+          <img src="assets/python-grafico.svg" alt="Illustration of Python" />
         </aside>
       </section>
-
+      </div>
+      
       <section id="services" class="services">
         <div class="text">
           <h3>Our Services</h3>
           <h2>
             Tailored solutions<br />to meet your <span>digital</span> needs
           </h2>
-        </div>
 
         <div class="cards">
           <div class="items">
             <i class="fa-solid fa-list-check"></i>
-            <h2>IT Management</h2>
+            <h2 id="h2">IT Management</h2>
             <p>
               Streamline your IT infrastructure with our comprehensive
               management services
@@ -69,7 +92,7 @@
 
           <div class="items">
             <i class="fas fa-shield-halved"></i>
-            <h2>Cybersecurity</h2>
+            <h2 id="h2">Cybersecurity</h2>
             <p>
               Protect your business with robust security solutions, ensuring
               your data and systems are safe
@@ -78,7 +101,7 @@
 
           <div class="items">
             <i class="fa-solid fa-brain"></i>
-            <h2>IT Consultancy</h2>
+            <h2 id="h2">IT Consultancy</h2>
             <p>
               Get expert advice and guidance to make informed decisions on
               technology strategies
@@ -86,7 +109,7 @@
           </div>
           <div class="items">
             <i class="fa-solid fa-cloud"></i>
-            <h2>Cloud Computing</h2>
+            <h2 id="h2">Cloud Computing</h2>
             <p>
               Harness the power of the cloud with scalable solutions for
               storage, computing, and more
@@ -95,7 +118,7 @@
 
           <div class="items">
             <i class="fa-solid fa-code"></i>
-            <h2>API Development</h2>
+            <h2 id="h2">API Development</h2>
             <p>
               Custom API development that meets your business needs and drives
               innovation
@@ -104,7 +127,7 @@
 
           <div class="items">
             <i class="fa-solid fa-chart-simple"></i>
-            <h2>Marketing Strategy</h2>
+            <h2 id="h2">Marketing Strategy</h2>
             <p>
               Boost your business with tailored marketing strategies powered by
               the latest digital tools
@@ -128,7 +151,7 @@
                 for small projects.
               </p>
             </div>
-            <button>Choose Plan</button>
+            <button id="chooseplan2"><a href="../Pagina_Web/assets/singUp.html">Choose Plan</a></button>
           </div>
 
           <div class="items">
@@ -140,7 +163,7 @@
                 of features to support your growing business needs.
               </p>
             </div>
-            <button>Choose Plan</button>
+            <button id="chooseplan"><a href="../Pagina_Web/assets/singUp.html">Choose Plan</a></button>
           </div>
 
           <div class="items">
@@ -152,7 +175,7 @@
                 to support your complex API development requirements.
               </p>
             </div>
-            <button>Choose Plan</button>
+            <button id="chooseplan2"><a href="../Pagina_Web/assets/singUp.html">Choose Plan</a></button>
           </div>
         </div>
       </section>
@@ -173,7 +196,7 @@
           <ul>
             <li><a>About Us</a></li>
             <li><a>Our Experience</a></li>
-            <li><a href="archivos/contacto.html">Contact</a></li>
+            <li><a href="/Pagina_Web/assets/contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
